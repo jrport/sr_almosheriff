@@ -1,0 +1,5 @@
+FROM postgres:bookworm
+
+ENV POSTGRES_PASSWORD=26072004
+ENV POSTGRES_USER=jrporto
+ENV POSTGRES_DB=inventario

@@ -1,14 +1,15 @@
 <script setup>
 	import SideBar from './components/SideBar.vue'
 	import SearchBar from './components/SearchBar.vue'
+	import { RouterView } from 'vue-router';
 </script>
 
 <template>
 	<div class="h-screen w-screen flex flex-row">
 		<SideBar/>
-		<div>
+		<div class="flex flex-col w-full text-black">
 			<SearchBar/>
-			<div>Inicial</div>
+			<RouterView />
 		</div>
 	</div>
 </template>

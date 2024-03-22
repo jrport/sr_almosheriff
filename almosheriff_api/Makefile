@@ -1,10 +1,9 @@
-run: clean dock
-	go build .
-	./jrport.almosheriff
+dev:
+	go build main.go
+	./main
 
-clean: 
-	rm -f jrport.almosheriff
-	sudo docker stop postgres_container
-
-dock:
-	sudo docker start postgres_container
+build: 
+	bash ./scripts/clean_docker.sh
+	bash ./scripts/build_docker.sh
+	go build -o main
+	./main

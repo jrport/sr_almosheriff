@@ -2,4 +2,6 @@ FROM postgres:bookworm
 
 ENV POSTGRES_PASSWORD=26072004
 ENV POSTGRES_USER=jrporto
-ENV POSTGRES_DB=inventario
+ENV POSTGRES_DB=almosheriff
+
+# COPY ./docker/init-user-db.sh /docker-entrypoint-initdb.d/init-user-db.sh

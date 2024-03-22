@@ -1,5 +1,5 @@
 #! /usr/bin/bash
 
-sudo docker stop postgres_container
-sudo docker rm postgres_container
-sudo docker rmi postgres_image
+docker stop postgres_container
+docker rm postgres_container
+docker rmi postgres_image
